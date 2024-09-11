@@ -28,6 +28,7 @@ class ProductDetailScreen extends StatelessWidget {
               child: Column(
                 children: [
                   Image.asset('assets/smartphone_xyz.png', height: 300),
+                  Image.asset('assets/headphonebluetooth.png', height: 300),
                   const SizedBox(height: 16),
                   const Text(
                     'O Smartphone XYZ possui uma tela AMOLED de 6.5 polegadas, '

@@ -44,6 +44,21 @@ class ProductListScreen extends StatelessWidget {
               },
             ),
           ],
+          if (category == 'Acessorios') ...[
+            ListTile(
+              title: const Text('Headphone Bluetooth'),
+              subtitle: const Text('R\$ 299,90'),
+              leading: const Icon(Icons.checkroom),
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                      builder: (context) =>
+                          ProductDetailScreen(productName: 'Headphone bluetooth')),
+                );
+              },
+            ),
+          ],
         ],
       ),
     );

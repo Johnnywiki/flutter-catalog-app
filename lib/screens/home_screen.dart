@@ -78,6 +78,17 @@ class _HomeScreenState extends State<HomeScreen> {
               );
             },
           ),
+          ListTile(
+            title: const Text('Acessorios'),
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                    builder: (context) =>
+                        ProductListScreen(category: 'Acessorios')),
+              );
+            },
+          ),
         ],
       ),
       bottomNavigationBar: BottomNavigationBar(
